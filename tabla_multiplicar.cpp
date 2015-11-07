@@ -1,4 +1,4 @@
-// Realizamos un programa donde con una sentencia nos salga la tabla de 7 entera.
+// Realizamos un programa donde con una sentencia nos salga la tabla de multiplicar de cualquier numero entera.
 
 #include <iostream>
 using namespace std;
