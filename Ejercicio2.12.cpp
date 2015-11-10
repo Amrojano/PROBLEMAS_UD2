@@ -4,7 +4,7 @@
 using namespace std;
 int main() {
 	
-	char c;	
+	char letra;	
 	double valor1;
 	double valor2;
 	double suma, resta, multiplicacion, division;
@@ -15,7 +15,7 @@ int main() {
 	cin >> valor1;
 	cout << "Selecciona una opcion [S]uma/[R]esta/[M]ultiplicacion/[D]ivision" << endl;
 	
-	switch (c) {
+	switch (letra) {
 	case 'S':
 	case 's':
 		cout << "Escogio la opcion suma" << endl;
@@ -25,14 +25,20 @@ int main() {
 	case 'R':
 	case 'r':
 		cout << "Escogio la opcion resta" << endl;
+		resta = valor1-valor2;
+		cout << "La suma es: " << suma << endl;
 		break;
 	case 'M':
 	case 'm':
 		cout << "Escogio la opcion multiplicacion" << endl;
+		multiplicacion = valor1*valor2;
+		cout << "La suma es: " << suma << endl;
 		break;
 	case 'D':
 	case 'd':
 		cout << "Escogio la opcion division" << endl;
+		division = valor1/valor2;
+		cout << "La suma es: " << suma << endl;
 		break;
 	}
 }
