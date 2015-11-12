@@ -10,6 +10,6 @@ int main() {
 
 	for (i = 1; i <= numero; i++) { //Estructura del bucle "for". 
 		factorial = factorial*i;
-		cout << "El factorial de " << numero << " es " << factorial << endl; //Salida por pantalla del programa.
 	}
+		cout << "El factorial de " << numero << " es " << factorial << endl; //Salida por pantalla del programa.
 }

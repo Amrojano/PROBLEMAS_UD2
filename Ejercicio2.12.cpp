@@ -11,9 +11,10 @@ int main() {
 	
 	cout << "Introduzca primer valor: " << endl;
 	cin >> valor1;
-	cout << "Introduzca primer valor: " << endl;
-	cin >> valor1;
+	cout << "Introduzca segundo valor: " << endl;
+	cin >> valor2;
 	cout << "Selecciona una opcion [S]uma/[R]esta/[M]ultiplicacion/[D]ivision" << endl;
+	cin >> letra;
 	
 	switch (letra) {
 	case 'S':
@@ -26,19 +27,19 @@ int main() {
 	case 'r':
 		cout << "Escogio la opcion resta" << endl;
 		resta = valor1-valor2;
-		cout << "La suma es: " << suma << endl;
+		cout << "La resta es: " << resta << endl;
 		break;
 	case 'M':
 	case 'm':
 		cout << "Escogio la opcion multiplicacion" << endl;
 		multiplicacion = valor1*valor2;
-		cout << "La suma es: " << suma << endl;
+		cout << "La multiplicacion es: " << multiplicacion << endl;
 		break;
 	case 'D':
 	case 'd':
 		cout << "Escogio la opcion division" << endl;
 		division = valor1/valor2;
-		cout << "La suma es: " << suma << endl;
+		cout << "La division es: " << division << endl;
 		break;
 	}
 }

@@ -1,9 +1,9 @@
-//Programa para calcular los multiplos de cualquier numero que el usiario nos introduzca, siempre y cuando esten en un intervalo de numeros, que tambien nos introduzca el usuario.
+//Programa para calcular los multiplos de cualquier numero que el usuario nos introduzca, siempre y cuando esten en un intervalo de numeros, que tambien nos introduzca el usuario.
 
 #include <iostream>
 using namespace std;
 int main() { //Variables que vamos a introducir en el programa: (y) numero del que queremos sacar los multiplos, (x) numeros de multiplos que contiene y en el intervalo, (IM) valor minimo del intervalo, (IS) valor maximo del intervalo.
-	int IM = 0, IS = 0;
+	int IM, IS;
 	int multiplos = 0, i, y;
 	cout << "Introduzca el numero del que queremos sacar los multiplos" << endl,
 	cin >> y;
@@ -11,12 +11,13 @@ int main() { //Variables que vamos a introducir en el programa: (y) numero del q
 	cin >> IM;
 	cout << "Introduzca intervalo máximo" << endl;
 	cin >> IS;
-	for (i = IM; i < IS; i = i + y) { // Estructura de nuestra sentencia "for".
+	for (i = IM; i <= IS; i = i + 1) { // Estructura de nuestra sentencia "for".
 		
 		if (i % y == 0 ) //Condicion para que nos salga nuestra sentencia.
 		multiplos = multiplos + y;
-		cout << "Los multiplos de " << y << " en el intervalo " << IM << " y " << IS << " son: " << multiplos << endl;
+		cout << "Los multiplos de " << y << " son: " << multiplos << endl;
 	}
+	
 }
 		 
 		
